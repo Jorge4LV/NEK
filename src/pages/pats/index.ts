@@ -3,7 +3,7 @@ import type { APIRoute } from "astro";
 export const GET: APIRoute = ({ request }) => {
   const totalGifs = 30;
   const randomNumber = Math.floor(Math.random() * totalGifs) + 1;
-  const gifUrl = `https://cdn.lucia-dev.com/pat${randomNumber
+  const gifUrl = `https://duduaapi-jorgealvs-projects.vercel.app//pat${randomNumber
     .toString()
     .padStart(2, "0")}.gif`; // URL of the GIF
 
